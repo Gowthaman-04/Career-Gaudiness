@@ -112,7 +112,7 @@ if uploaded_file is not None:
         st.subheader('Extracted Resume Text')
         st.write(text[:500] + '...' if len(text) >500 else text)
         
-        processed = preprocessed(text)
+        processed = preprocess(text)
         
         prediction = predict_roles(model,vect,encoder,processed)
         
