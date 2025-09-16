@@ -78,7 +78,7 @@ encoder= joblib.load("LEencoder.pkl")
 # In[14]:
 
 
-def predict_roles(model, vectorizer, encoder, text, top_n=3):
+def predict_roles(model, vectorizer, encoder, text, top_n=10):
     vec = vectorizer.transform([text])
     probs = model.predict_proba(vec)[0]
     classes = model.classes_
