@@ -4,11 +4,6 @@
 # In[7]:
 
 
-get_ipython().run_line_magic('pip', 'install streamlit')
-get_ipython().run_line_magic('pip', 'install PyMuPDF')
-get_ipython().run_line_magic('pip', 'install docx2txt')
-
-
 # In[8]:
 
 
