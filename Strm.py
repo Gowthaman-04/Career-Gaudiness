@@ -114,7 +114,7 @@ if uploaded_file is not None:
         
         processed = preprocess(text)
         
-        prediction = predict_roles(model,vect,encoder,processed)
+        predictions = predict_roles(model,vect,encoder,processed)
         
         st.subheader('Top Predicted Roles')
         for role,prob in predictions.items():
