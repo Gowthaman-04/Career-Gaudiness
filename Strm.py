@@ -116,7 +116,7 @@ if uploaded_file is not None:
         
         prediction = predict_roles(model,vect,encoder,processed)
         
-        st.subheade('Top Predicted Roles')
+        st.subheader('Top Predicted Roles')
         for role,prob in predictions.items():
             st.write(f'**{role}**:{prob:.2f}')
         best_role = max(predictions,key=predictions.get)
